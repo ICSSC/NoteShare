@@ -1,0 +1,106 @@
+/** Global CSS styles (Used for all pages) */
+.html, body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+/**
+ * Navigation bar
+ */
+.navigation {
+  background-color: transparent;
+  padding: 25px 50px;
+  border-bottom: 1px solid transparent;
+  /** Fixes whitespace problem */
+  font-size: 0px;
+  /**
+   * Have animated transitions when changing
+   * color, background-color, or border properties
+   */
+  -webkit-transition: color .1s linear 0s,
+      background-color .1s linear 0s,
+      border .1s linear 0s;
+  transition: color .1s linear 0s,
+      background-color .1s linear 0s,
+      border .1s linear 0s;
+}
+
+.navigation a {
+  color: white;
+  font-size: 14px;
+  padding: 0px 15px;
+}
+
+.navigation a.brand {
+  font-size: 20px;
+}
+
+.navigation:hover, .navigation.white {
+  background-color: white;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0px 1px 2px #888;
+}
+
+.navigation:hover a, .navigation.white a {
+  color: #333;
+}
+
+.navigation a:hover, .navigation a:focus {
+  /* Overrides the default css settings for links when hovered **/
+  color: #333;
+  text-decoration: none;
+}
+
+/** 
+ * Landing page only
+ */
+body.lp-page {
+  /**
+   * Stretch the background to fill the screen while maintaining
+   * aspect ratio
+   */
+  background-image: url('bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body.lp-page .message {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  margin-bottom: 15px;
+}
+
+body.lp-page .message.main {
+  margin-bottom: 20px;
+  font-size: 48px;
+}
+
+body.lp-page .form-control[name="q"] {
+  /** Stretch the input to match the height of the buttons */
+  height: 46px;
+  font-size: 28px;
+  line-height: 28px;
+}
+
+body.lp-page .form-control[name="q"]:focus {
+  /** Prevent bootstrap's default glow on focus behavior */
+  border-color: #f0ad4e;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+body.lp-page form {
+  /** Give the entire form an orange border */
+  border-radius: 6px;
+  border: 5px solid #ec971f;
+}
+
+body.lp-page .input-group {
+  /**
+   * Have the form's inner element fill up the empty space
+   * between it and the border
+   */
+  margin: -3px;
+}
