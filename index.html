@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NoteShare</title>
+    <!-- Load the web font we are using (Roboto)  -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto'
+        rel='stylesheet' type='text/css'>
+    <!-- Download bootstrap's css file from somewhere else -->
+    <link rel="stylesheet" type="text/css"
+        href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- Load our css file -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <!--
+    Tag the page as lp-page so we can apply custom styling with minimal
+    conflicts
+  -->
+  <body class="lp-page">
+    <!-- The "navigation" div is our nav bar -->
+    <div class="navigation">
+      <a class="brand" href="/">Noteshare</a>
+      <a href="/about">About us</a>
+      <a href="/faq">FAQ</a>
+      <a href="/contact">Contact us</a>
+    </div>
+    
+    <!-- *Bootstrap* The rest of our content in a container -->
+    <div class="container">
+      <!-- Messages -->
+      <h2 class="message main">Connecting through education</h2>
+      <h3 class="message">Find notes for your class</h3>
+
+      <!-- *Bootstrap* Stretch to fill up the container horizontally -->
+      <div class="col-xs-12">
+        <!-- Configure so that the form is automatically submitted -->
+        <form action="http://lmgtfy.com" method="GET">
+          <!--
+            *Bootstrap* Package all three input sections into an input group
+          -->
+          <div class="input-group">
+            <!--
+              *Bootstrap* First input group, the dropdown.
+              You would think we would use a select element for this, but
+              since select elements are hard to style, we are using
+              Bootstrap's dropdown.
+            -->
+            <div class="input-group-btn">
+              <!--
+                We update the hidden input and the button text
+                whenever an item is selected.
+              -->
+              <button type="button" id="select-btn" 
+                  class="btn btn-default btn-lg dropdown-toggle"
+                  data-toggle="dropdown" aria-expanded="false">
+                All Schools <span class="caret"></span>
+              </button>
+              <input type="hidden" id="select-input" name="school">
+
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#" data-value="all">All Schools</a></li>
+                <li><a href="#" data-value="uci">UC Irvine</a></li>
+              </ul>
+            </div>
+
+            <!-- *Bootstrap* The main text input -->
+            <input type="text" class="form-control" name="q">
+
+            <!-- *Bootstrap* The search button -->
+            <span class="input-group-btn">
+              <button type="submit" class="btn btn-warning btn-lg">
+                <span class="glyphicon glyphicon-search"></span>
+              </button>
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--
+      Load jquery and bootstrap javascript files from other sources,
+      all javascript files are loaded at the end of the body so that:
+        A) The page can render before loading the potentially large js files
+        B) Javascript code can execute and operate on elements immediately,
+            they don't have to listen to an 'onReady' event as would be the
+            case if they were loaded in the head tag like the css files.
+    -->
+    <script type="text/javascript"
+        src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript"
+        src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js">
+    </script>
+    <!-- Load our Javascript file -->
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

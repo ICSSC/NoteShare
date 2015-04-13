@@ -1,0 +1,20 @@
+{
+  "name": "notshar",
+  "version": "0.0.0",
+  "description": "a note sharing app",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ICSSC/NoteShare.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ICSSC/NoteShare/issues"
+  },
+  "homepage": "https://github.com/ICSSC/NoteShare"
+}
