@@ -104,3 +104,12 @@ body.lp-page .input-group {
    */
   margin: -3px;
 }
+
+/**
+ * Class Page only
+ */
+body.class_page {
+  background-image: url('bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
