@@ -114,9 +114,9 @@ body.class-page {
   background-size: cover;
 }
 
-body.right-nav {
-	width: 25%;
-	height: 100%;
-	background-color: #4556623;
+body.class-page .right-nav {
+	width: 100px;
+	height: 300px;
+	background-color: #eeeeee;
 	float: right;
 }
