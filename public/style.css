@@ -108,7 +108,7 @@ body.lp-page .input-group {
 /**
  * Class Page only
  */
-body.class_page {
+body.class-page {
   background-image: url('bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
