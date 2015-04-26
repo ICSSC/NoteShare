@@ -60,7 +60,7 @@ body.lp-page {
    * Stretch the background to fill the screen while maintaining
    * aspect ratio
    */
-  background-image: url('bg.jpg');
+  background-image: url('img/bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -109,14 +109,42 @@ body.lp-page .input-group {
  * Class Page only
  */
 body.class-page {
-  background-image: url('bg.jpg');
+  background-image: url('img/bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-body.class-page .right-nav {
-	width: 100px;
-	height: 300px;
+body.class-page .tab-view {
+
+}
+
+/**
+ * Right navigation bar
+ */
+ 
+#navbar-right {
+	width: 20%;
+	height: 100%;
 	background-color: #eeeeee;
 	float: right;
+	text-align: center;
+}
+
+body.class-page.right-nav.navbar-label {
+	display: block;
+}
+
+/*
+ * Image
+ */
+.image
+{
+	position: relative;
+	display: inline-block;
+	border-radius: 8px;
+}
+
+.image.icon
+{
+	max-width: 50%;
 }
