@@ -109,9 +109,7 @@ body.lp-page .input-group {
  * Class Page only
  */
 body.class-page {
-  background-image: url('img/bg.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+
 }
 
 body.class-page .tab-view {
