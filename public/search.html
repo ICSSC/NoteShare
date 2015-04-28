@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NoteShare | Search</title>
+    <!-- Load the web font we are using (Roboto)  -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto'
+        rel='stylesheet' type='text/css'>
+    <!-- Download bootstrap's css file from somewhere else -->
+    <link rel="stylesheet" type="text/css"
+        href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- Load our css file -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <!--
+    Tag the page as lp-page so we can apply custom styling with minimal
+    conflicts
+  -->
+  <body>
+    <!-- The "navigation" div is our nav bar -->
+    <div class="navigation white">
+      <a class="brand" href="/">Noteshare</a>
+      <a href="/about">About us</a>
+      <a href="/faq">FAQ</a>
+      <a href="/contact">Contact us</a>
+      <a href="/classPage.html">Classes</a>
+    </div>
+    
+    <!-- *Bootstrap* The rest of our content in a container -->
+    <div class="container">
+    </div>
+    <!--
+      Load jquery and bootstrap javascript files from other sources,
+      all javascript files are loaded at the end of the body so that:
+        A) The page can render before loading the potentially large js files
+        B) Javascript code can execute and operate on elements immediately,
+            they don't have to listen to an 'onReady' event as would be the
+            case if they were loaded in the head tag like the css files.
+    -->
+    <script type="text/javascript"
+        src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript"
+        src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js">
+    </script>
+    <!-- Load our Javascript file -->
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

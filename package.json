@@ -8,8 +8,10 @@
     "start": "node server.js"
   },
   "dependencies": {
-	"express": "latest",
-	"mongodb": "~2.0"
+    "express": "latest",
+    "mongodb": "~2.0",
+    "mustache": "~2.0.0",
+    "handlebars": "~3.0.2"
   },
   "repository": {
     "type": "git",
