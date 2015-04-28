@@ -15,18 +15,75 @@
     Tag the page as lp-page so we can apply custom styling with minimal
     conflicts
   -->
-  <body>
+  <body class="search-page">
     <!-- The "navigation" div is our nav bar -->
     <div class="navigation white">
       <a class="brand" href="/">Noteshare</a>
-      <a href="/about">About us</a>
-      <a href="/faq">FAQ</a>
-      <a href="/contact">Contact us</a>
-      <a href="/classPage.html">Classes</a>
+      <form class="form form-inline search-input">
+        <div class="input-group">
+          <input type="text" class="form-control">
+          <span class="input-group-btn">
+            <button class="btn btn-warning" type="button">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </span>
+        </div>
+      </form>
     </div>
     
     <!-- *Bootstrap* The rest of our content in a container -->
-    <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-md-offset-1">
+        <div class="well white"></div>
+      </div>
+      <div class="col-md-7">
+        <div class="well white">
+          <h2>Search Results</h2>
+          <div class="search-item">
+            <span class="class-type cs">CS</span>
+            <div class="search-content middle-align">
+              <a class="name" href="#">CS 161 - Algorithms</a>
+              <div>
+                <span class="middle-align">Professors: </span>
+                <a href="#" class="label label-default">Eppstein</a>
+                <a href="#" class="label label-default">Goodrich</a>
+              </div>
+            </div>
+          </div>
+          <div class="search-item">
+            <span class="class-type cs">CS</span>
+            <div class="search-content middle-align">
+              <a class="name" href="#">CS 163 - Graph Algorithms</a>
+              <div>
+                <span class="middle-align">Professors: </span>
+                <a href="#" class="label label-default">Eppstein</a>
+                <a href="#" class="label label-default">Goodrich</a>
+              </div>
+            </div>
+          </div>
+          <div class="search-item">
+            <span class="class-type cs">CS</span>
+            <div class="search-content middle-align">
+              <a class="name" href="#">CS 164 - Computation Geometry</a>
+              <div>
+                <span class="middle-align">Professors: </span>
+                <a href="#" class="label label-default">Eppstein</a>
+                <a href="#" class="label label-default">Goodrich</a>
+              </div>
+            </div>
+          </div>
+          <div class="search-item">
+            <span class="class-type eecs">EE</span>
+            <div class="search-content middle-align">
+              <a class="name" href="#">EECS 50 - Discrete Time Signals</a>
+              <div>
+                <span class="middle-align">Professors: </span>
+                <a href="#" class="label label-default">Healey</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!--
       Load jquery and bootstrap javascript files from other sources,
