@@ -32,12 +32,22 @@
     </div>
     
     <!-- *Bootstrap* The rest of our content in a container -->
-    <div class="row">
-      <div class="col-md-3 col-md-offset-1">
-        <div class="well white"></div>
-      </div>
-      <div class="col-md-7">
-        <div class="well white">
+    <div class="row white well" style="margin:30px !important;">
+      <!--<div class="white well">-->
+        <div class="col-md-2">
+          <h3>Search Filter</h3>
+          <form>
+            <div class="input-group">
+              <input type="checkbox" id="cs" checked>
+              <label for="cs">Computer Science</label>
+            </div>
+            <div class="input-group">
+              <input type="checkbox" id="eecs" checked>
+              <label for="eecs">Electrical Engineering</label>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-7">
           <h2>Search Results</h2>
           <div class="search-item">
             <span class="class-type cs">CS</span>
@@ -83,7 +93,48 @@
             </div>
           </div>
         </div>
-      </div>
+        <div class="col-md-3 detail-box">
+          <a href="#" class="title">CS 161 - Algorithms</a>
+          <p>
+            CS 161 is an upper division computer science course that teaches
+            students about the analysis and design of computational
+            algorithms. Such topics include computational complexity classes,
+            cryptography, dynamic programming, and more.
+          </p>
+          <p class="list-heading">Professors who have taught this class:</p>
+          <div>
+            <a href="#" class="label label-default">David Eppstein</a>
+            <a href="#" class="label label-default">Michael Goodrich</a>
+            <a href="#" class="label label-default">Some Other Professor</a>
+          </div>
+
+          <p class="list-heading">Tags:</p>
+          <div>
+            <a href="#" class="label label-default">Algorithms</a>
+            <a href="#" class="label label-default">Cryptography</a>
+            <a href="#" class="label label-default">Upper Division</a>
+            <a href="#" class="label label-default">Time Complexity</a>
+            <a href="#" class="label label-default">Sorting</a>
+            <a href="#" class="label label-default">Dynamic Programming</a>
+          </div>
+
+          <p class="list-heading">Commonly viewed notes:</p>
+          <div>
+            <a href="#" class="note-item">
+              <span class="glyphicon glyphicon-file"></span>
+              Computational Complexity
+            </a> 
+            <a href="#" class="note-item">
+              <span class="glyphicon glyphicon-file"></span>
+              Algorithm Design
+            </a>
+            <a href="#" class="note-item">
+              <span class="glyphicon glyphicon-file"></span>
+              Dynamic Programming
+            </a>
+          </div>
+        </div>
+      <!--</div>-->
     </div>
     <!--
       Load jquery and bootstrap javascript files from other sources,

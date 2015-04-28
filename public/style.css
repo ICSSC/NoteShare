@@ -9,8 +9,30 @@ body .row {
   margin: 0px !important;
 }
 
+.label.label-default {
+  margin: 2px;
+}
+
 .middle-align {
   vertical-align: middle;
+}
+
+.note-item {
+  width: 100px;
+  height: 120px;
+  display: inline-block;
+  text-align: center;
+  color: #444;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, .1);
+  padding: 10px;
+  margin: 10px;
+  font-size: 12px;
+}
+
+.note-item .glyphicon {
+  font-size: 60px;
 }
 
 /**
@@ -138,6 +160,11 @@ body.search-page .search-item {
   margin: 20px;
   padding: 10px;
   border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+body.search-page .search-item:hover {
+  background: whitesmoke;
 }
 
 body.search-page .search-item .search-content {
@@ -165,6 +192,21 @@ body.search-page .class-type.cs {
 body.search-page .class-type.eecs {
   background-color: #f07f4e;
   border: 1px solid #d05f2e;
+}
+
+body.search-page .detail-box {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+body.search-page .detail-box .title {
+  font-size: 32px;
+}
+
+body.search-page .detail-box p.list-heading {
+  margin-top: 20px;
+  margin-bottom: 0px;
 }
 
 /**
