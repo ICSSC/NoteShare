@@ -212,12 +212,19 @@ body.search-page .detail-box p.list-heading {
 /**
  * Class Page only
  */
-body.class-page {
-
+body.class-page .menu-bar {
+  height: 500px;
+  width: 15%;
+  float: left;
+  padding-left: 10px;
+  background-color: white;
+  border-right: 1px solid #ddd;
+  box-shadow: 0px 1px 2px #888;
+  display: none;
 }
 
-body.class-page .tab-view {
-
+body.class-page .container {
+  margin-top: 2px;
 }
 
 /**
@@ -225,7 +232,6 @@ body.class-page .tab-view {
  */
  
 #navbar-right {
-	width: 20%;
 	height: 100%;
 	background-color: #eeeeee;
 	float: right;
