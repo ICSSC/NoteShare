@@ -34,12 +34,23 @@ if ($(document.body).hasClass('lp-page')) {
   });
 }
 
-if ($(document.body).hasClass('class-page')) {
+else if ($(document.body).hasClass('class-page')) {
   var menuButton = $('.menu-button');
   menuButton.click(function() {
     var menuBar = $('.menu-bar');
     var pageContainer = $('.container');
-    menuBar.css('display', 'block');
-    pageContainer.css('margin-left', '15%');
+    var menuShowing = false;
+    if (menuBar.attr('display') === 'block') {
+      menuShowing = true;
+    }
+    if (!menuShowing) {
+      menuBar.css('display', 'block');
+      pageContainer.css('margin-left', '15%');
+      menuShowing = true;
+    } else {
+      menuBar.css('display', 'none');
+      pageContainer.css('margin-left', 'auto');
+      menuShowing = false;
+    }
   });
 }
