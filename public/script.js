@@ -33,3 +33,13 @@ if ($(document.body).hasClass('lp-page')) {
     btn.html(element.text() + ' ' + caret);
   });
 }
+
+if ($(document.body).hasClass('class-page')) {
+  var menuButton = $('.menu-button');
+  menuButton.click(function() {
+    var menuBar = $('.menu-bar');
+    var pageContainer = $('.container');
+    menuBar.css('display', 'block');
+    pageContainer.css('margin-left', '15%');
+  });
+}
