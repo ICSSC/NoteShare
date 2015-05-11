@@ -214,53 +214,8 @@ body.search-page .detail-box p.list-heading {
  */
 body.class-page {
 	top: 0px;
-	bottom: 0xp;
-	background-color: #cccccc;
-}
-
-#tabs {
-	border-style: solid;
-	background-color: #dddddd;
-}
-
-#tabs ul {
-	list-style-type: none;
-}
-
-#tabs ul li {
-	display: inline-block;
-	clear: none;
-	float: left;
-	height: 24px;
-}
-
-#tabs ul li a {
-position: relative;
-margin-top: 16px;
-display: block;
-margin-left: 6px;
-line-height: 24px;
-padding-left: 10px;
-background: #f6f6f6;
-z-index: 9999;
-border: 1px solid #ccc;
-border-bottom: 0px;
-
-/* The following four lines are to make the top left and top right corners of each tab rounded. */
--moz-border-radius-topleft: 4px;
-border-top-left-radius: 4px;
--moz-border-radius-topright: 4px;
-border-top-right-radius: 4px;
-/* end of rounded borders */
-
-width: 130px;
-color: #000000;
-text-decoration: none;
-font-weight: bold;
-}
-
-#tabs ul li a:hover {
-text-decoration: underline; /* a very simple effect when hovering the mouse on tab */
+	bottom: 0px;
+	background-color: #e9eaed;
 }
 
 #tabs #content_area { /* this is the css class for the content displayed in each tab */
@@ -293,7 +248,8 @@ overflow: hidden;
 	position: fixed;
 	width: 80%;
 	height: 100%;
-	background-color: #cbd3db;
+	background-color: white;
+	padding-left: 65px;
 }
 
 body.class-page.right-nav.navbar-label {

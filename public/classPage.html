@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>NoteShare</title>
@@ -26,18 +26,18 @@
     </div>
     
     <!-- *Bootstrap* The rest of our content in a container -->
-    <div class="container">
+    <div>
 		
-		<div id="classcontent-left">
+		<div class="well" id="classcontent-left">
 			<div>
 				<h2 id="classname">Class name</h2>
 			</div>
 		
 			<div id="tabs">
 				
-				<ul>
-					<li id="li_tab1" onclick="tab('tab1')"><a>Tab1</a></li>
-					<li id="li_tab2" onclick="tab('tab2')"><a>Tab2</a></li>
+				<ul class="nav nav-tabs">
+					<li id="li_tab1" class="active" onclick="tab('tab1')"><a href="#">Tab1</a></li>
+					<li id="li_tab2" onclick="tab('tab2')"><a href="#">Tab2</a></li>
 				</ul>
 				
 				<div id="content_area">
